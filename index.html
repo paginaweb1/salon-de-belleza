@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mercar Fresco</title>
+<title>Siempre Bellas</title>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,17 +16,18 @@
 body{
 margin:0;
 font-family: Arial, sans-serif;
+background:#fff;
 }
 
 /* NAVBAR */
 .navbar a {
-  display:block;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  text-align: center;
-  background: black;
+display:block;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+text-align: center;
+background: black;
 }
 
 /* BOTÓN VOLVER */
@@ -50,22 +51,17 @@ box-shadow:0 0 10px rgba(0,0,0,0.5);
 transition:0.3s;
 }
 .btn-volver:hover{
-background:#00ff9d;
-color:#000;
+background:#ff69b4;
+color:#fff;
 transform: translateY(-50%) scale(1.1);
 }
 
-/* TITULO */
-.titulo-seccion{
+/* TITULOS */
+h1,h2{
 text-align:center;
-background:#ff9800;
-color:#fff;
-padding:15px;
-margin-top:30px;
-font-weight:bold;
 }
 
-/* GRID PERSONALIZADO */
+/* GRID PROFESIONAL */
 .grid{
 display:grid;
 grid-template-columns: repeat(3,1fr);
@@ -73,7 +69,7 @@ gap:20px;
 padding:20px;
 }
 
-/* RESPONSIVE GRID */
+/* RESPONSIVE */
 @media (max-width:900px){
 .grid{
 grid-template-columns: repeat(2,1fr);
@@ -86,25 +82,26 @@ grid-template-columns: 1fr;
 }
 }
 
-/* CARD */
+/* CARD ESTÉTICA */
 .card{
 background:#fff;
-border-radius:12px;
+border-radius:15px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
 transition:0.3s;
 display:flex;
 flex-direction:column;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(255,105,180,0.4);
 }
 
 /* IMAGEN */
 .card img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
 }
 
@@ -113,6 +110,22 @@ object-fit:cover;
 padding:15px;
 text-align:center;
 font-weight:bold;
+color:#444;
+}
+
+/* TITULO SECCION */
+.titulo-seccion{
+text-align:center;
+background:#ff69b4;
+color:#fff;
+padding:15px;
+margin-top:30px;
+font-weight:bold;
+}
+
+/* RESPONSIVE TEXTO */
+@media (max-width:768px){
+h1{font-size:22px;}
 }
 
 </style>
@@ -132,9 +145,9 @@ font-weight:bold;
 </div>
 
 <!-- TITULOS -->
-<div class="w3-container w3-center">
-  <h1>A MERCAR FRESCO!!!</h1>
-  <h1>Y A BUEN PRECIO</h1>
+<div class="w3-container">
+  <h1>Siempre Bellas 💅</h1>
+  <h2>Realza tu belleza con estilo</h2>
 </div>
 
 <!-- VIDEO -->
@@ -151,57 +164,42 @@ style="position:absolute;top:-28px;right:24px">
 </a>
 </div>
 
-<!-- TITULO -->
+<!-- SECCION -->
 <div class="titulo-seccion">
-  <h2>¿QUÉ VAS A PEDIR HOY?</h2>
+  <h2>Nuestros Servicios</h2>
 </div>
 
-<!-- PRODUCTOS -->
+<!-- GRID DE SERVICIOS -->
 <div class="grid">
 
 <div class="card">
-<img src="naranjas.png">
-<div class="card-content">Naranja x Lb $1.600</div>
+<img src="uñas1.png">
+<div class="card-content">Manicure Profesional</div>
 </div>
 
 <div class="card">
-<img src="bananos.png">
-<div class="card-content">Bananos x Lb $1.400</div>
+<img src="uñas2.png">
+<div class="card-content">Diseños en Uñas</div>
 </div>
 
 <div class="card">
-<img src="manzanas.png">
-<div class="card-content">Manzana x Lb $5.400</div>
+<img src="uñas3.png">
+<div class="card-content">Pedicure Spa</div>
 </div>
 
 <div class="card">
-<img src="papaya.png">
-<div class="card-content">Papaya x Lb $1.400</div>
+<img src="pelo1.png">
+<div class="card-content">Cortes Modernos</div>
 </div>
 
 <div class="card">
-<img src="sandia.png">
-<div class="card-content">Sandía x Lb $1.500</div>
+<img src="pelo2.png">
+<div class="card-content">Tintes y Coloración</div>
 </div>
 
 <div class="card">
-<img src="manzana-verde.png">
-<div class="card-content">Manzana verde x Lb $5.600</div>
-</div>
-
-<div class="card">
-<img src="pescado.png">
-<div class="card-content">Mojarra Roja x Lb $8.500</div>
-</div>
-
-<div class="card">
-<img src="cuajada.png">
-<div class="card-content">Cuajada x Lb $11.000</div>
-</div>
-
-<div class="card">
-<img src="frutos-secos.png">
-<div class="card-content">Frutos secos x Lb $20.000</div>
+<img src="pelo3.png">
+<div class="card-content">Peinados Profesionales</div>
 </div>
 
 </div>
@@ -212,7 +210,7 @@ style="position:absolute;top:-28px;right:24px">
 <i class="fa fa-facebook-official"></i>
 <i class="fa fa-instagram"></i>
 </div>
-<p>UN DÍA A LA VEZ !!!</p>
+<p>Siempre Bellas © 2026</p>
 </footer>
 
 </body>
