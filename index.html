@@ -52,16 +52,10 @@ transition:0.3s;
 }
 .btn-volver:hover{
 background:#ff69b4;
-color:#fff;
-transform: translateY(-50%) scale(1.1);
+transform: scale(1.1);
 }
 
-/* TITULOS */
-h1,h2{
-text-align:center;
-}
-
-/* GRID PROFESIONAL */
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns: repeat(3,1fr);
@@ -69,51 +63,36 @@ gap:20px;
 padding:20px;
 }
 
-/* RESPONSIVE */
 @media (max-width:900px){
-.grid{
-grid-template-columns: repeat(2,1fr);
+.grid{grid-template-columns: repeat(2,1fr);}
 }
-}
-
 @media (max-width:500px){
-.grid{
-grid-template-columns: 1fr;
-}
+.grid{grid-template-columns: 1fr;}
 }
 
-/* CARD ESTÉTICA */
+/* CARD */
 .card{
 background:#fff;
 border-radius:15px;
 overflow:hidden;
 box-shadow:0 5px 20px rgba(0,0,0,0.15);
 transition:0.3s;
-display:flex;
-flex-direction:column;
 }
-
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 10px 30px rgba(255,105,180,0.4);
 }
-
-/* IMAGEN */
 .card img{
 width:100%;
 height:220px;
 object-fit:cover;
 }
-
-/* TEXTO */
 .card-content{
 padding:15px;
 text-align:center;
 font-weight:bold;
-color:#444;
 }
 
-/* TITULO SECCION */
+/* TITULOS */
 .titulo-seccion{
 text-align:center;
 background:#ff69b4;
@@ -123,9 +102,32 @@ margin-top:30px;
 font-weight:bold;
 }
 
-/* RESPONSIVE TEXTO */
-@media (max-width:768px){
-h1{font-size:22px;}
+/* WHATSAPP FLOTANTE */
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:#fff;
+padding:12px 18px;
+border-radius:50px;
+font-weight:bold;
+display:flex;
+align-items:center;
+gap:8px;
+z-index:1000;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+.whatsapp:hover{
+transform:scale(1.05);
+}
+
+/* CONTACTO */
+.contacto{
+padding:40px 20px;
+background:#fff0f5;
+text-align:center;
 }
 
 </style>
@@ -144,10 +146,10 @@ h1{font-size:22px;}
   <a href="#">BIENVENIDOS</a> 
 </div>
 
-<!-- TITULOS -->
+<!-- TITULO -->
 <div class="w3-container">
-  <h1>Siempre Bellas 💅</h1>
-  <h2>Realza tu belleza con estilo</h2>
+  <h1 class="w3-center">Siempre Bellas 💅</h1>
+  <h2 class="w3-center">Realza tu belleza con estilo</h2>
 </div>
 
 <!-- VIDEO -->
@@ -155,21 +157,11 @@ h1{font-size:22px;}
 <video src="mov_bbb.mp4" autoplay muted loop width="100%"></video>
 </div>
 
-<!-- WHATSAPP -->
-<div class="w3-container" style="position:relative">
-<a href="https://wa.me/573209304898" target="_blank"
-class="w3-button w3-xlarge w3-circle w3-teal"
-style="position:absolute;top:-28px;right:24px">
-<i class="fa fa-whatsapp"></i>
-</a>
-</div>
-
-<!-- SECCION -->
+<!-- SERVICIOS -->
 <div class="titulo-seccion">
   <h2>Nuestros Servicios</h2>
 </div>
 
-<!-- GRID DE SERVICIOS -->
 <div class="grid">
 
 <div class="card">
@@ -203,6 +195,28 @@ style="position:absolute;top:-28px;right:24px">
 </div>
 
 </div>
+
+<!-- CONTACTO -->
+<div class="contacto">
+<h2>📞 Contacto</h2>
+<p>WhatsApp: 3209304898</p>
+<p>Email: siemprebellas@gmail.com</p>
+
+<h2>📍 Ubicación</h2>
+<p>Santander, Colombia</p>
+
+<iframe 
+src="https://maps.google.com/maps?q=santander%20colombia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="250" style="border:0;border-radius:15px;">
+</iframe>
+
+</div>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/573209304898?text=Hola%20quiero%20agendar%20una%20cita"
+class="whatsapp" target="_blank">
+<i class="fa fa-whatsapp"></i> Agenda tu cita aquí
+</a>
 
 <!-- FOOTER -->
 <footer class="w3-center w3-black w3-padding-64">
